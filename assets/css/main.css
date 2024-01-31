@@ -43,7 +43,7 @@ body {
 header {
     height: 800px; /* This fixed height might be problematic on small screens */
     width: 100%;
-    background-image: url(/PrivPrCN/assets/img/IMG_1.\ 36.jpeg); /* Corrected the URL */
+    background-image: url(/assets/img/IMG_1.\ 36.jpeg); /* Corrected the URL */
     background-size: cover;
     background-position: center; /* Changed to center for better responsiveness */
 }
