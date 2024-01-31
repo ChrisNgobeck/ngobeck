@@ -1,0 +1,642 @@
+
+  
+.ovdiv {
+    margin: 0 5%;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.lefc {
+    flex-wrap: nowrap;
+    margin: 0 15%;
+    flex: 1;    
+}
+
+
+.mdiv2 {
+    border: 0;
+    margin: 5px;
+    padding: 10px;
+    color: aquamarine;
+    font-size: 36px;
+    
+}
+.mdiv3 {
+    border: 0;
+    flex-wrap: nowrap;
+    max-width: 600px;
+    margin: 5px;
+    padding: 10px;
+    color: rgb(193, 187, 187);
+    font-size: 25px;
+    
+}
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .ovdiv {
+        flex-direction: column; /* Stack children vertically */
+        margin: 0; /* Adjust margin as needed */
+    }
+
+    
+    .mdiv2{
+        margin-top: 15%;
+    }
+}
+.button1 {
+    padding: 17px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(197, 189, 189);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+  
+.button1:hover {
+    letter-spacing: 3px;
+    background-color: hsl(260, 7%, 8%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(26, 25, 27) 0px 7px 29px 0px;
+}
+  
+.button1:active {
+    letter-spacing: 3px;
+    background-color: hsl(270, 3%, 12%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(21, 21, 22) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+.button2 {
+    padding: 17px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(193, 187, 187);
+    border: 0;
+    background-color: #27282d;
+    box-shadow: rgba(207, 205, 205, 0.05) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+  
+.button2:hover {
+    letter-spacing: 3px;
+    background-color: hsl(260, 4%, 73%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(26, 25, 27) 0px 7px 29px 0px;
+}
+  
+.button2:active {
+    letter-spacing: 3px;
+    background-color: hsl(264, 4%, 78%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(187, 187, 189) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
+.sect2{
+    background-color: rgb(183, 178, 178);
+    width: 100%;
+    height: auto;
+}
+.sect3 {
+    background: url(/PrivPrCN/assets/img/IMG_1.\ 36.jpeg) no-repeat center center;
+    height: auto;
+    background-size: cover;
+    padding: 80px;
+    text-align: center;
+    color: white;
+
+}
+.sect4 {
+    width: 100%;
+    height: auto;
+    margin-right: 5%;
+    padding: 40px;
+    align-content: center;
+}
+.ritc1 {
+    position: relative;
+    flex-wrap: nowrap;
+    width: 650px;
+    border: 0;
+    margin: 5%;
+    padding: 40px;
+    color: white;
+    font-size: 30px;
+}
+.left1 {
+    flex-wrap: nowrap;
+    margin: 8%;
+    flex: 1;
+    
+    
+} 
+
+.txt-sect01 {
+    position: relative;
+    font-family: bold;
+    font-size: 25px;
+    color: rgb(145, 142, 142);
+    padding: 20px ;
+}
+.maindiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+
+}
+/* Media query for smaller screens */
+@media (max-width: 600px) { /* Adjust the max-width as needed */
+    .maindiv {
+        /* Adjust flexbox properties for smaller screens */
+        justify-content: space-around; /* Example adjustment */
+    }
+
+    .ritc1, .left1 {
+        width: 100%; /* Make these elements take full width on small screens */
+        margin: 5px; /* Adjust margin */
+        padding: 20px; /* Adjust padding */
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    .left1{
+        
+        align-items: center;
+    }
+} 
+
+.sect1 {
+    background-color: #27282d;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.image-container {
+    margin: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Initial gap between images */
+    overflow: hidden; /* To manage overflow when images scale */
+}
+
+.image-container .image {
+    flex: 1;
+    max-width: 45%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for transform and filter */
+}
+
+.image {
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+      left   0% top    var(--_g),
+      bottom 0% left   var(--_g),
+      top    0% right  var(--_g),
+      right  0% bottom var(--_g);
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    filter: grayscale(100%);
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.image-container .image:hover {
+    --_m:
+      left   10% top    var(--_g),
+      bottom 10% left   var(--_g),
+      top    10% right  var(--_g),
+      right  10% bottom var(--_g);
+    transform: scale(1.05); /* Scale up the image slightly */
+    filter: grayscale(0); /* Remove grayscale filter */
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+}
+
+@media (max-width: 600px) {
+    .image-container .image {
+        max-width: 100%;
+    }
+}
+
+
+.quote {
+    font-size: 1.5em;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0 auto;
+    font-style: italic;
+}
+.newsroom {
+    font-family: Arial, sans-serif; /* or any font of your choice */
+    max-width: 600px; /* or the width of your choice */
+    padding: 20px;
+}
+
+.newsroom h2 {
+    font-size: 2em; /* large font size for the heading */
+    margin-bottom: 20px; /* space below the heading */
+}
+
+.newsroom ul {
+    list-style: none; /* removes the default bullet points */
+    padding: 0; /* removes the default padding */
+}
+
+.newsroom li {
+    margin-bottom: 10px; /* space between list items */
+    padding-bottom: 5px; /* space at the bottom of each list item */
+    border-bottom: 2px solid #6c6a6a; /* horizontal line under each item */
+}
+
+.newsroom a {
+    text-decoration: none; /* removes the underline from links */
+    color: rgb(129, 126, 126); /* color of the text for the links */
+    font-size: 1em; /* size of the link text */
+    transition: color 0.3s ease; /* smooth color transition on hover */
+}
+
+.newsroom a:hover {
+    color: #646262; /* color of link text on hover */
+}
+.sect1fo {
+    width: 100%;
+    height: auto;
+}
+.foliodiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    place-items: space-between;
+    
+    
+   
+}
+.foliodiv1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 10%;
+    margin-bottom: 15%;
+    flex: 1;
+    width: 50%;
+    height: auto;
+    
+    
+    
+   
+}
+.foliodiv2 {
+    flex-wrap: wrap;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+} 
+.folioimage {
+    border-radius: 10px;
+    flex-wrap: wrap;
+    width: 1000px;
+    max-height: 900px;
+    object-fit: contain;
+
+    
+}
+@media (max-width: 600px) {
+    .foliodiv {
+        flex-direction: column-reverse;
+        
+       
+    }
+    .foliodiv1 {
+        margin-top: 10%;
+        max-width: 100%;
+       
+        
+    }
+    .foliodiv2 {
+        max-width: 100%;
+       
+
+        
+    }
+    .folioimage{
+        max-width: 580px;
+        
+        order: 1;
+        
+    }
+    .foliodiv1 {
+        order: 2; 
+    }
+    .foliodiv2  .folioimage{
+        max-height: none;
+    }
+}
+.txtfolio{
+    font-size: 50px;
+    
+}
+.txtfoliop{
+    font-size: 20px;
+    color: #807d7d;
+}
+
+.menu {
+    position: fixed;
+    margin: 1% 3% 0 3%;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color:rgb(199, 194, 194) ;  /*transparent*/
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(205, 203, 203, 0.1);
+    padding: 10px 20px;
+    
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.checkbox-icon {
+    /* This is a placeholder for the checkbox icon */
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url('path-to-checkbox-icon.png') no-repeat center center;
+    background-size: contain;
+    margin-right: 5px;
+}
+.menu-icon {
+    float: right;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    margin: 0;
+}
+
+.bar {
+    background-color: #333;
+    height: 3px;
+    width: 100%;
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay.active {
+    width: 100%;
+}
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .closebtn {
+        right: 25px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar {
+        width: 50px; /* Smaller width for smaller screens */
+    }
+    .sidebar a { 
+        font-size: 18px;
+        margin-right: 50px; 
+    }
+     
+}
+
+/* Additional styling for scrollbar (optional) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eae8e8; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fcfcfc; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f4f2f2; 
+}
+.social-sidebar {
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.social-sidebar a {
+    color: #333; /* Icon color */
+    font-size: 24px; /* Icon size */
+    margin: 10px;
+    text-decoration: none; /* Removes underline from links */
+}
+
+.social-sidebar a:hover {
+    color: #555; /* Icon hover color */
+}
+@media (max-width: 600px) { /* Adjust the max-width as needed */
+    .social-sidebar {
+        right: auto; /* Reset left positioning */
+        left: 10px; /* Position 10px from the right */
+        top: auto; /* Reset top positioning */
+        bottom: 10px; /* Position 10px from the bottom */
+        transform: translateY(0); /* Reset transform */
+    }
+}
+
+
+
+.main-content {
+    margin-left: 60px; /* Space for sidebar */
+    padding: 20px;
+}
+
+/* Ensure icons are vertically aligned */
+.fab, .fas {
+    display: block;
+    margin: 10px;
+}
+.headern {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Or any color that matches your design */
+    padding: 80px;
+    margin: 10%;
+}
+
+
+.hero {
+    margin: 20px 0;
+}
+
+.hero h1 {
+    font-size: 4.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 10%;
+    font-size: 1.5em;
+    color: rgb(152, 149, 149);
+}
+
+.hero .button {
+    
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.logos img {
+    margin: 8%;
+    height: 30px; /* Adjust the size of logos as needed */
+}
+
+
+
+.scroll-down {
+    
+    position: absolute;
+    bottom: 0; /* Adjust as necessary */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px; /* Adjust as necessary */
+    z-index: 10;
+}
+
+.scroll-down a {
+    padding: 4px;
+    border-radius: 50%;
+    background-color: transparent rgb(209, 205, 205);
+    text-decoration: none;
+    color: #000; /* Adjust the color as necessary */
+    animation: bounce 2s infinite; /* Adds a bouncing animation to draw attention */
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Two columns with the first being half the width of the second */
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    border: 1px solid rgb(214, 209, 209);
+}
+
+.sidebar {
+    background-color: #c7d5c8; /* Green background */
+    padding: 45px;
+    color: white; /* White text color */
+    height: auto;
+}
+
+.main {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    color: #7fa28f; /* Dark text color */
+}
+
+h1, h3 {
+    margin: 0 0 20px 0;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+
+
