@@ -40,6 +40,8 @@
     .ovdiv {
         flex-direction: column; /* Stack children vertically */
         margin: 0; /* Adjust margin as needed */
+        justify-content: center;
+        align-items: center;
     }
 
     
@@ -159,10 +161,11 @@
 
 }
 /* Media query for smaller screens */
-@media (max-width: 370px) { /* Adjust the max-width as needed */
+@media (max-width: 600px) { /* Adjust the max-width as needed */
     .maindiv {
         /* Adjust flexbox properties for smaller screens */
-        justify-content: space-around; /* Example adjustment */
+        justify-content: center; /* Example adjustment */
+        align-items: center;
     }
 
     .ritc1, .left1 {
@@ -240,6 +243,7 @@
 @media (max-width: 500px) {
     .image-container .image {
         max-width: 100%;
+        align-items: center;
     }
 }
 
@@ -332,6 +336,8 @@
 @media (max-width: 600px) {
     .foliodiv {
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
         
        
     }
@@ -644,10 +650,12 @@ p {
 }
 
 /* Responsive adjustments */
-@media (max-width: 370px) {
+@media (max-width: 600px) {
     .resume {
         grid-template-columns: 1fr; /* Stack columns on top of each other */
-        margin: 10%; /* Reduce margin for smaller screens */
+        margin: 20%; /* Reduce margin for smaller screens */
+        justify-content: center;
+        justify-items: center;
     }
 
     .sidebar, .main {

@@ -17,10 +17,10 @@ body {
 }
 
 /* Removed the @media (body) as it is not a valid media query */
-@media (prefers-color-scheme: light) { /* Assuming you want to change colors on dark mode preference */
+@media (max-width: 600px) { /* Assuming you want to change colors on dark mode preference */
     body {
-        --background-color: #000;
-        --text-color: #fff;
+        justify-content: center;
+        align-items: center;
     }
 }
 
