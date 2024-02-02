@@ -36,7 +36,7 @@
     
 }
 /* Media query for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 370px) {
     .ovdiv {
         flex-direction: column; /* Stack children vertically */
         margin: 0; /* Adjust margin as needed */
@@ -159,7 +159,7 @@
 
 }
 /* Media query for smaller screens */
-@media (max-width: 600px) { /* Adjust the max-width as needed */
+@media (max-width: 370px) { /* Adjust the max-width as needed */
     .maindiv {
         /* Adjust flexbox properties for smaller screens */
         justify-content: space-around; /* Example adjustment */
@@ -237,7 +237,7 @@
             mask: var(--_m);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .image-container .image {
         max-width: 100%;
     }
@@ -473,14 +473,14 @@
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 370px) {
     .closebtn {
         right: 25px;
         font-size: 40px;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 370px) {
     .sidebar {
         width: 50px; /* Smaller width for smaller screens */
     }
@@ -530,7 +530,7 @@
 .social-sidebar a:hover {
     color: #555; /* Icon hover color */
 }
-@media (max-width: 600px) { /* Adjust the max-width as needed */
+@media (max-width: 500px) { /* Adjust the max-width as needed */
     .social-sidebar {
         display: none;
         right: auto; /* Reset left positioning */
@@ -644,7 +644,7 @@ p {
 }
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 370px) {
     .resume {
         grid-template-columns: 1fr; /* Stack columns on top of each other */
         margin: 10%; /* Reduce margin for smaller screens */

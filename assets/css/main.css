@@ -65,7 +65,7 @@ header {
     margin-right: 30%;
 }
 
-@media (max-width: 600px) { /* Responsive adjustments for smaller screens */
+@media (max-width: 370px) { /* Responsive adjustments for smaller screens */
     .moon-logo, .logo, .phul {
         margin-right: 10px;
         margin-left: 10px;
@@ -161,7 +161,7 @@ ul li a:hover {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 200px) {
     footer {
         padding: 15px 5%;
     }
@@ -218,7 +218,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-@media (max-width: 250px) {
+@media (max-width: 350px) {
     .sidebar {
         display: none;
     }
